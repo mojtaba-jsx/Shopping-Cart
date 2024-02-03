@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Shop.css'
+import Header from './Header/Header'
  class Shop extends Component {
 
   constructor(){
@@ -22,7 +23,9 @@ import './Shop.css'
   }
   render() {
     return (
-      <div>Shop</div>
+      <div>
+        <Header/>
+      </div>
     )
   }
 }

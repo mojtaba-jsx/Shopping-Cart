@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'inter-bold';
+    src: url('../../fonts/Inter-Bold.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    /* background-color: red; */
+}
+
+.header-image{
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.header{
+    position: relative;
+}
+
+.header-texts{
+    position: absolute;
+    top: 18rem;
+    left: 5rem;
+}
+
+.header-title{
+    font-size: 4rem;
+    font-family: 'inter-bold', Courier, monospace;
+    color: #40BFFF;
+    text-shadow: 1px 4px 0px rgba(64,191,255,0.6);
+}
+
+
+.header-btn{
+    padding: 1rem 4rem;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'inter-bold', Courier, monospace;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    background-color: #FB7181;
+    color: #ffff;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.header-btn:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.shoe-icon{
+    font-size: 4rem;
+}
