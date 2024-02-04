@@ -3,7 +3,9 @@ import './CartProduct.css'
 class CartProduct extends Component {
   render() {
     return (
-      <div>CartProduct</div>
+      <div className='card-product'>
+
+      </div>
     )
   }
 }

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../fonts/Inter-Bold.ttf");
+}
+.shop {
+  background: rgb(22, 178, 219);
+  background: radial-gradient(
+    circle,
+    rgba(22, 178, 219, 1) 0%,
+    rgba(74, 111, 172, 1) 100%
+  );
+}
+.products {
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+  padding: 2rem;
+}
+
+.products-title {
+  font-family: "Inter-Bold", Courier, monospace;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #ffff;
+  text-shadow: 4px -2px 0px rgba(64, 191, 255, 0.6);
+}
