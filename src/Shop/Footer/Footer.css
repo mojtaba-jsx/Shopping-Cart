@@ -1,0 +1,40 @@
+.footer__wrapper{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-shoe{
+    width: 4rem;
+    height: 4rem;
+    color: red; 
+    transition: all 400ms ease-in;
+}
+
+.footer-shoe:hover{
+    transform: scale(2);
+    cursor: pointer;
+}
+
+.footer-shoe:nth-child(1){
+    color: green;
+}
+.footer-shoe:nth-child(2){
+    color: yellow;
+}
+.footer-shoe:nth-child(3){
+    color: gray;
+}
+.footer-shoe:nth-child(4){
+    color: violet;
+}
+.footer-shoe:nth-child(5){
+    color: skyblue;
+}
+.footer-shoe:nth-child(6){
+    color: gold;
+}
+.footer-shoe:nth-child(7){
+    color: royalblue;
+}

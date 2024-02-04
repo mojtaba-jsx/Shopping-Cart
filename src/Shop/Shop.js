@@ -4,6 +4,7 @@ import "./Shop.css";
 import Header from "./Header/Header";
 import Product from "./Product/Product";
 import CartProduct from "./CartProduct/CartProduct";
+import Footer from "./Footer/Footer";
 class Shop extends Component {
   constructor() {
     super();
@@ -84,7 +85,7 @@ class Shop extends Component {
   }
   render() {
     return (
-      <div className="shop" id="shop">
+      <div className="shop">
         <Header />
 
         <section className="products">
@@ -101,6 +102,8 @@ class Shop extends Component {
             <CartProduct />
           </div>
         </section>
+
+        <Footer/>
       </div>
     );
   }
