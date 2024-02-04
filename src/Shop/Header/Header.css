@@ -12,6 +12,7 @@
 .header{
     width: 100%;
     /* background-color: red; */
+    height: 34rem;
 }
 
 .header-image{
@@ -19,6 +20,7 @@
     height: auto;
     background-position: center;
     background-size: contain;
+    height: 40rem;
 }
 
 

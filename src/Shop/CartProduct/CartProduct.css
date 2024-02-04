@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'inter-bold';
+    src: url('../../fonts/Inter-Bold.ttf');
+}
+
+.card-product__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-product__titles{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 4rem;
+    font-family: 'inter-bold', Courier, monospace;
+    margin-bottom: 1rem;
+}
+.card-product__titles span{
+    width: 10rem;
+    /* background-color: red; */
+    text-align: start;
+}
+
+.card-product__titles span:nth-child(2){
+    text-align: center;
+}
+
+.card-product__box-info{
+    display: flex;
+    align-items: center;
+}
+
+.card-product__box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+    width: 88rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.card-product__box-info-img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1rem;
+}
+
+.card-product__box-info-name{
+    font-family: 'inter-bold', Courier, monospace;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}  
+
+.card-product__box-price-value{
+    font-family: 'inter-bold', Courier, monospace;
+    font-size: 1.2rem;
+}
+
+.card-product__box-btn-tag{
+    padding: 1.4rem 4rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-family: 'inter-bold', Courier, monospace;
+    background-color:#de3c4f ;
+    color: #ffff;
+}

@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./Shop.css";
 
-import Product from "./Product/Product";
 import Header from "./Header/Header";
+import Product from "./Product/Product";
+import CartProduct from "./CartProduct/CartProduct";
 class Shop extends Component {
   constructor() {
     super();
@@ -14,7 +15,7 @@ class Shop extends Component {
           img: "./images/product-1.png",
           price: "300",
           disPrice: "250",
-          discountPercent:'20'
+          discountPercent: "20",
         },
         {
           id: 2,
@@ -22,7 +23,7 @@ class Shop extends Component {
           img: "./images/product-2.png",
           price: "400",
           disPrice: "200",
-          discountPercent:'50'
+          discountPercent: "50",
         },
         {
           id: 3,
@@ -30,7 +31,7 @@ class Shop extends Component {
           img: "./images/product-3.png",
           price: "500",
           disPrice: "350",
-          discountPercent:'35'
+          discountPercent: "35",
         },
         {
           id: 4,
@@ -38,7 +39,7 @@ class Shop extends Component {
           img: "./images/product-4.png",
           price: "200",
           disPrice: "180",
-          discountPercent:'10'
+          discountPercent: "10",
         },
         {
           id: 5,
@@ -46,7 +47,7 @@ class Shop extends Component {
           img: "./images/product-5.png",
           price: "800",
           disPrice: "550",
-          discountPercent:'30'
+          discountPercent: "30",
         },
         {
           id: 6,
@@ -54,7 +55,7 @@ class Shop extends Component {
           img: "./images/product-6.png",
           price: "900",
           disPrice: "840",
-          discountPercent:'20'
+          discountPercent: "20",
         },
         {
           id: 7,
@@ -62,7 +63,7 @@ class Shop extends Component {
           img: "./images/product-7.png",
           price: "900",
           disPrice: "840",
-          discountPercent:'20'
+          discountPercent: "20",
         },
         {
           id: 8,
@@ -70,7 +71,7 @@ class Shop extends Component {
           img: "./images/product-8.png",
           price: "900",
           disPrice: "840",
-          discountPercent:'20'
+          discountPercent: "20",
         },
       ],
       shoppingCart: [],
@@ -83,22 +84,22 @@ class Shop extends Component {
   }
   render() {
     return (
-      <div className="shop">
+      <div className="shop" id="shop">
         <Header />
 
-        <h1 className="products-title">
-          Shoes List
-        </h1>
         <section className="products">
-          {
-            this.state.products.map((product)=>(
+          <h1 className="products-title">Shoes List</h1>
+          <div className="products__wrapper">
+            {this.state.products.map((product) => (
               <Product {...product} key={product.id} />
-            ))
-          }
+            ))}
+          </div>
         </section>
 
         <section className="cart">
-
+          <div className="cart__Wrapper">
+            <CartProduct />
+          </div>
         </section>
       </div>
     );
